@@ -21,5 +21,3 @@ RUN dnf install ansible -y
 
 #set user back to default
 USER 1001
-
-CMD /bin/bash
