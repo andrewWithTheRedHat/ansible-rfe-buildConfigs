@@ -1,7 +1,7 @@
 kind: BuildConfig
 apiVersion: build.openshift.io/v1
 metadata:
-  name: "ansible_rfe_build" 
+  name: "ansible-rfe-build" 
 spec:
   runPolicy: "Serial" 
   source: 
@@ -15,4 +15,4 @@ spec:
   output: 
     to:
       kind: "ImageStreamTag"
-      name: "ansible_rfe:latest"
+      name: "ansible-rfe:latest"
