@@ -1,0 +1,18 @@
+kind: BuildConfig
+apiVersion: build.openshift.io/v1
+metadata:
+  name: "ansible_rfe_build" 
+spec:
+  runPolicy: "Serial" 
+  source: 
+    git:
+      uri: "https://github.com/redhat-cop/rhel-edge-automation-arch/"
+      ref: main
+    contextDir: "openshift/gitops/manifests/rfe/ansible/base"
+  strategy:
+  dockerStrategy:
+    dockerfilePath: Dockerfile
+  output: 
+    to:
+      kind: "ImageStreamTag"
+      name: "ansible_rfe:latest"
