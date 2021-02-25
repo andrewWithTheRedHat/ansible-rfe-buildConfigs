@@ -8,7 +8,7 @@ spec:
     git:
       uri: "https://github.com/andrewWithTheRedhat/ansible/rfe/buildConfigs"
       ref: main
-    contextDir: "openshift/gitops/manifests/rfe/ansible/base"
+    contextDir: /
   strategy:
   dockerStrategy:
     dockerfilePath: Dockerfile
