@@ -6,7 +6,7 @@ spec:
   runPolicy: "Serial" 
   source: 
     git:
-      uri: "https://github.com/andrewWithTheRedhat/ansible/rfe/buildConfigs"
+      uri: "https://github.com/andrewWithTheRedhat/ansible-rfe-buildConfigs"
       ref: main
     contextDir: /
   strategy:
