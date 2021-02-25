@@ -10,8 +10,8 @@ spec:
       ref: main
     contextDir: /
   strategy:
-  dockerStrategy:
-    dockerfilePath: Dockerfile
+    dockerStrategy:
+      dockerfilePath: Dockerfile
   output: 
     to:
       kind: "ImageStreamTag"
