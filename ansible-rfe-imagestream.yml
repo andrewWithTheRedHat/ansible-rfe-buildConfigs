@@ -1,6 +1,6 @@
 apiVersion: image.openshift.io/v1
 kind: ImageStream
 metadata:
-  name: ansible-git
+  name: ansible-ctr-bc
   namespace: rfe
 spec: {}
