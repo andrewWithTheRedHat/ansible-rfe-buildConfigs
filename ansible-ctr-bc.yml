@@ -8,11 +8,12 @@ spec:
     git:
       uri: "https://github.com/andrewWithTheRedhat/ansible-rfe-buildConfigs"
       ref: main
+    images:
+    - from:
+        kind: ImageStreamTag
+        name: ansible-rfe-build:latest
+        namespace: rfe-ansible
     contextDir: /
   strategy:
     dockerStrategy:
       dockerfilePath: Dockerfile
-  output: 
-    to:
-      kind: "ImageStreamTag"
-      name: "ansible-rfe-build:latest"
