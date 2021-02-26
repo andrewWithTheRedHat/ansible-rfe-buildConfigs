@@ -1,0 +1,14 @@
+
+
+
+
+source:
+  git:
+    uri: https://github.com/andrewWithTheRedHat/ansible-rfe-buildConfigs.git"
+  images:
+  - from:
+      kind: ImageStreamTag
+      name: ansible-rfe-build:latest
+      namespace: rfe-ansible
+  contextDir: \ 
+  dockerfile: "FROM registry.access.redhat.com/ubi8/python-38\USER 0\RUN dnf update -y\RUN pip install --upgrade pip\RUN pip install openshift\RUN pip install ansible==2.9.*\USER 1001" 
