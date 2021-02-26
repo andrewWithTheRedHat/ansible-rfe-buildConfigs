@@ -26,9 +26,12 @@ spec:
       
       #reset user to default
       USER 1001
-    strategy:
-      type: Docker
-      dockerstrategy: {}
+  strategy:
+    type: Docker
+    dockerstrategy:
+      from:
+        kind: DockerImage
+        name: registry.access.redhat.com/ubi8/python-38
   output: 
     to:
       kind: "ImageStreamTag"
