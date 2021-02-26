@@ -15,4 +15,4 @@ spec:
   output: 
     to:
       kind: "ImageStreamTag"
-      name: "ansible-rfe:latest"
+      name: "ansible-rfe-build:latest"
